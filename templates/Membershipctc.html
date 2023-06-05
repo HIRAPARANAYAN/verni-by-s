@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+            <div class="container-xxl py-5 bg-primary hero-header mb-5">
+                <div class="container my-5 py-5 px-lg-5">
+                    <div class="row g-5 pt-5">
+                        <div class="col-12 text-center text-lg-start">
+                            <h1 class="display-4 text-white animated slideInLeft">Membership Card Terms and Conditions</h1>
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb justify-content-center justify-content-lg-start animated slideInLeft">
+                                    <li class="breadcrumb-item"><a class="text-white" href="{% url 'index' %}">Home</a></li>
+                                    <li class="breadcrumb-item text-white active">Membership Card Terms and Conditions</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+        <!-- Full Screen Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content" style="background: rgba(29, 40, 51, 0.8);">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center justify-content-center">
+                        <div class="input-group" style="max-width: 600px;">
+                            <input type="text" class="form-control bg-transparent border-light p-3" placeholder="Type search keyword">
+                            <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Full Screen Search End -->
+         <div class="container-xxl py-5">
+            <div class="container px-lg-5">
+                <div class="section-title position-relative text-center mx-auto mb-5 pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">Membership Card Terms and Conditions</h1>
+                </div>
+                <div class="row gy-5 gx-4">
+                    <div class="col-lg-12 col-md-3 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="position-relative shadow rounded border-top border-5 border-primary">
+                            <div class="d-flex align-items-center justify-content-center position-absolute top-0 start-50 translate-middle bg-primary rounded-circle" style="width: 100px; height: 100px; margin-top: -3px;">
+                                <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="{% static 'img/finalterms.png' %}">
+                            </div>
+                            <div class="text-center border-bottom p-4 pt-5">
+                                <h4 class="fw-bold">Membership Card Terms and Conditions</h4>
+                            </div>
+                            <div class="p-4">
+                                <h5 class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>The membership card payments are only refundable in accordance with the company's return and refund policy.</h5>
+                                <h5 class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>Membership card is not a debit or credit card.</h5>
+                                <h5 class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>The services are only available to the consumer who acquired the membership card; no other family members or guardians may use them.</h5>
+                                <h5 class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>A replacement membership card will only be issued if the consumer notifies the appropriate administration office within 24 hours of the loss.</h5>
+                                <h5 class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>The membership card only has a 12-month expiration date.</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+{% endblock %}
+        
+

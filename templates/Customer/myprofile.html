@@ -1,0 +1,132 @@
+{% extends "Customer\Customerbase.html" %}
+{% block content %}
+<!-- Begin Page Content -->
+                <div class="container-fluid">
+                    <div class="row g-2">
+                        <div class="col-lg-12">
+                            <div class="p-3 border bg-light shadow mb-5 bg-white rounded">
+                                <div class="wow fadeInUp" data-wow-delay="0.2s">
+                                    <div class="row">
+                                        <div class="col form-1 section-description wow fadeIn">
+                                            <h2>My Profile Details</h2>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-7 form-1-box wow fadeInUp">
+
+                                            <form action="" method="post">
+                                                <!-- Personal Info -->
+                                                <fieldset class="form-group border p-3">
+                                                    <legend class="w-auto px-2">Profile Details</legend>
+                                                    <div class="form-row">
+                                                        <div class="form-group col-md-12">
+                                                            <label for="text">Name</label>
+                                                            <input type="text" class="form-control" id="text" value="Priyank">
+                                                        </div>
+                                                        <div class="form-group col-md-12">
+                                                            <label for="email">Email Id</label>
+                                                            <input type="email" class="form-control" id="email" value="priyank9801@gmail.com">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-row">
+                                                        <div class="form-group col-md-12">
+                                                            <label for="City">City</label>
+                                                            <input type="text" class="form-control" id="City" value="Surat">
+                                                        </div>
+                                                        <div class="form-group col-md-12">
+                                                            <label for="State">State</label>
+                                                            <select class="custom-select" id="State"
+                                                                required>
+                                                                <option selected disabled value="">Choose...</option>
+                                                                <option>Rajasthan</option>
+                                                                <option>Madhya Pradesh</option>
+                                                                <option>Maharashtra</option>
+                                                                <option>Uttar Pradesh</option>
+                                                                <option>Gujarat</option>
+                                                                <option>Karnataka</option>
+                                                                <option>Ladakh</option>
+                                                                <option>Andhra Pradesh</option>
+                                                                <option>Odisha</option>
+                                                                <option>Chhattisgarh</option>
+                                                                <option>Tamil Nadu</option>
+                                                                <option>Telangana</option>
+                                                                <option>Bihar</option>
+                                                                <option>West Bengal</option>
+                                                                <option>Arunachal Pradesh</option>
+                                                                <option>Jharkhand</option>
+                                                                <option>Assam</option>
+                                                                <option>Himachal Pradesh</option>
+                                                                <option>Jammu and Kashmir</option>
+                                                                <option>Uttarakhand</option>
+                                                                <option>Punjab</option>
+                                                                <option>Haryana</option>
+                                                                <option>Kerala</option>
+                                                                <option>Meghalaya</option>
+                                                                <option>Manipur</option>
+                                                                <option>Mizoram</option>
+                                                                <option>Nagaland</option>
+                                                                <option>Tripura</option>
+                                                                <option>Andaman and Nicobar Islands</option>
+                                                                <option>Sikkim</option>
+                                                                <option>Goa</option>
+                                                                <option>Delhi</option>
+                                                                <option>Dadra and Nagar Haveli and Daman and Diu
+                                                                </option>
+                                                                <option>Puducherry</option>
+                                                                <option>Chandigarh</option>
+                                                                <option>Lakshadweep</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col">
+                                                        <button type="submit" class="btn btn-primary btn-customized">Change</button>
+                                                    </div>
+                                                </fieldset>
+                                                </form>
+                                        </div>
+                                        <div class="col-md-5 form-1-box wow fadeInUp">
+                                                <fieldset class="form-group border p-3">
+                                                    <legend class="w-auto px-2">Reference Link</legend>
+                                                    <div class="form-row">
+                                                        <div class="form-group col-md-10">
+                                                            <label for="Date">Reference Link</label>
+                                                            <input type="text" class="form-control" id="Date" name="link" disabled value="https://varni.com/digital/pl/priyank">
+                                                        </div>
+                                                        <div class="form-group col-md-2">
+                                                            <button type="button" class="btn btn-primary btn-customized">Copy</button>
+                                                        </div>
+                                                    </div>
+                                                </fieldset>
+                                            <form action="" method="post">
+                                                <!-- Personal Info -->
+                                                <fieldset class="form-group border p-3">
+                                                    <legend class="w-auto px-2">Change Password</legend>
+                                                    <div class="form-row">
+                                                        <div class="form-group col-md-12">
+                                                            <label for="password">Password</label>
+                                                            <input type="text" class="form-control" id="password">
+                                                        </div>
+                                                        <div class="form-group col-md-12">
+                                                            <label for="Repassword">Repassword</label>
+                                                            <input type="text" class="form-control" id="Repassword">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <button type="submit" class="btn btn-primary btn-customized">Change</button>
+                                                    </div>
+                                                </fieldset>
+                                                </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- /.container-fluid -->
+                </div>
+                <!-- End of Main Content -->
+            </div>
+ {% endblock %}

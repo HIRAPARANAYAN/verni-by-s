@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+    {% block content %}
+            <div class="container-xxl py-5 bg-primary hero-header mb-5">
+                <div class="container my-5 py-5 px-lg-5">
+                    <div class="row g-5 pt-5">
+                        <div class="col-12 text-center text-lg-start">
+                            <h1 class="display-4 text-white animated slideInLeft">Our Products</h1>
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb justify-content-center justify-content-lg-start animated slideInLeft">
+                                    <li class="breadcrumb-item"><a class="text-white" href="index.html">Home</a></li>
+                                    <li class="breadcrumb-item text-white active">Our Products</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+        <!-- Full Screen Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content" style="background: rgba(29, 40, 51, 0.8);">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center justify-content-center">
+                        <div class="input-group" style="max-width: 600px;">
+                            <input type="text" class="form-control bg-transparent border-light p-3" placeholder="Type search keyword">
+                            <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Full Screen Search End -->
+
+
+        <!-- Comparison Start -->
+        <div class="container-xxl py-5">
+            <div class="container px-lg-5">
+                <div class="section-title position-relative text-center mx-auto mb-5 pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">Shared VS Dedicated Server</h1>
+                    <p class="mb-1">Vero justo sed sed vero clita amet. Et justo vero sea diam elitr amet ipsum eos
+                        ipsum clita duo sed. Sed vero sea diam erat vero elitr sit clita.</p>
+                </div>
+                <div class="row g-5 comparison position-relative">
+                    <div class="col-lg-6 pe-lg-5">
+                        <div class="section-title position-relative mx-auto mb-4 pb-4">
+                            <h3 class="fw-bold mb-0">Shared Server</h3>
+                        </div>
+                        <div class="row gy-3 gx-5">
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
+                                <i class="fa fa-server fa-3x text-primary mb-3"></i>
+                                <h5 class="fw-bold">99.99% Uptime</h5>
+                                <p>Ipsum dolor diam stet stet kasd diam sea stet sed rebum dolor ipsum</p>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
+                                <i class="fa fa-shield-alt fa-3x text-primary mb-3"></i>
+                                <h5 class="fw-bold">100% Secured</h5>
+                                <p>Ipsum dolor diam stet stet kasd diam sea stet sed rebum dolor ipsum</p>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                                <i class="fa fa-cog fa-3x text-primary mb-3"></i>
+                                <h5 class="fw-bold">Control Panel</h5>
+                                <p>Ipsum dolor diam stet stet kasd diam sea stet sed rebum dolor ipsum</p>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
+                                <i class="fa fa-headset fa-3x text-primary mb-3"></i>
+                                <h5 class="fw-bold">24/7 Support</h5>
+                                <p>Ipsum dolor diam stet stet kasd diam sea stet sed rebum dolor ipsum</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 ps-lg-5">
+                        <div class="section-title position-relative mx-auto mb-4 pb-4">
+                            <h3 class="fw-bold mb-0">Dedicated Server</h3>
+                        </div>
+                        <div class="row gy-3 gx-5">
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
+                                <i class="fa fa-server fa-3x text-secondary mb-3"></i>
+                                <h5 class="fw-bold">99.99% Uptime</h5>
+                                <p>Ipsum dolor diam stet stet kasd diam sea stet sed rebum dolor ipsum</p>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
+                                <i class="fa fa-shield-alt fa-3x text-secondary mb-3"></i>
+                                <h5 class="fw-bold">100% Secured</h5>
+                                <p>Ipsum dolor diam stet stet kasd diam sea stet sed rebum dolor ipsum</p>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                                <i class="fa fa-cog fa-3x text-secondary mb-3"></i>
+                                <h5 class="fw-bold">Control Panel</h5>
+                                <p>Ipsum dolor diam stet stet kasd diam sea stet sed rebum dolor ipsum</p>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
+                                <i class="fa fa-headset fa-3x text-secondary mb-3"></i>
+                                <h5 class="fw-bold">24/7 Support</h5>
+                                <p>Ipsum dolor diam stet stet kasd diam sea stet sed rebum dolor ipsum</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Comparison Start -->
+
+    {% endblock %}

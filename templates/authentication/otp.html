@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% load static %}
+    <meta charset="UTF-8">
+    <title>Varni OTP</title>
+    <link href="{% static 'otp.css' %} " rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container">
+    <header></header>
+    <h4>Enter OTP</h4>
+    <p>We have sent you access OTP via SMS for mobile number verfication {{phone}}</p>
+    <form action="/loginform/verifyotp/" method="POST" enctype="multipart/form-data">
+      {% csrf_token %}
+      {% if message %}
+      <div style="color:red;">
+              {{message}}
+      </div>
+      {% endif %}
+      <div class="input-field">
+        <input type="number" name="otp" />
+        <input type="number" name="otp1" disabled />
+        <input type="number" name ="otp2" disabled />
+        <input type="number" name="otp3"disabled />
+      </div>
+      <button>Verify</button>
+    </form>
+    <p>Didn't receive the code <br><a href="#">Resend code</a></p>
+  </div>
+
+  <script src="{% static 'otp.js' %}"></script>
+</body>
+</html>

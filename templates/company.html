@@ -1,0 +1,247 @@
+{% extends "base.html" %}
+    {% block content %}
+    {% load static %}
+            <div class="container-xxl py-5 bg-primary hero-header mb-5">
+                <div class="container my-5 py-5 px-lg-5">
+                    <div class="row g-5 pt-5">
+                        <div class="col-12 text-center text-lg-start">
+                            <h1 class="display-4 text-white animated slideInLeft">Company</h1>
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb justify-content-center justify-content-lg-start animated slideInLeft">
+                                    <li class="breadcrumb-item"><a class="text-white" href="{% url 'index' %}">Home</a></li>
+                                    <li class="breadcrumb-item text-white active">Company</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+        <!-- Full Screen Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content" style="background: rgba(29, 40, 51, 0.8);">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center justify-content-center">
+                        <div class="input-group" style="max-width: 600px;">
+                            <input type="text" class="form-control bg-transparent border-light p-3" placeholder="Type search keyword">
+                            <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Full Screen Search End -->
+
+
+        <!-- About Start -->
+        <div class="container-xxl py-5">
+            <div class="container px-lg-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="section-title position-relative mb-4 pb-4">
+                            <h1 class="mb-2">Welcome to Varni</h1>
+                        </div>
+                        <p class="mb-4">Selecting the greatest firm for yourself is the least you can do. So here it is: The greatest leading company in India offers the best specialists to work for our clients, and as soon as a client applies, we start the process of getting in touch with you to introduce you to our experts.</p>
+                        <h4 class="mb-2">FINANCIAL CONSULTATION SERVICES </h4>
+                        <p class="mb-4">
+                            <span class="material-icons">done</span>We are the top organisation in India that offers financial consulting for both individuals and businesses. <br>
+                            <span class="material-icons">done</span>Our corporate headquarters are in SURAT, Gujarat. We not only offer our highly qualified specialists to assist with money management, but also support clients in achieving their most recent financial goals.<br>
+                             <span class="material-icons">done</span>If you want your life or business to function well, you can't resist such consultation. Don't hesitate; one click will do the task.</p>
+                        <div class="row g-3">
+                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.1s">
+                                <div class="bg-light rounded text-center p-4">
+                                    <i class="fa fa-users-cog fa-2x text-primary mb-2"></i>
+                                    <h2 class="mb-1" data-toggle="counter-up">1234</h2>
+                                    <p class="mb-0">Experts</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.3s">
+                                <div class="bg-light rounded text-center p-4">
+                                    <i class="fa fa-users fa-2x text-primary mb-2"></i>
+                                    <h2 class="mb-1" data-toggle="counter-up">1234</h2>
+                                    <p class="mb-0">Personal Loans</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.5s">
+                                <div class="bg-light rounded text-center p-4">
+                                    <i class="fa fa-check fa-2x text-primary mb-2"></i>
+                                    <h2 class="mb-1" data-toggle="counter-up">1234</h2>
+                                    <p class="mb-0">Business Loan</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="{% static 'img/varni loan conslanting.jpg' %}">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+        <div class="container-xxl py-5">
+            <div class="container px-lg-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-5">
+                        <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="{% static 'img/loan1.jpg' %}">
+                    </div>
+                    <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="section-title position-relative mb-4 pb-4">
+                            <h1 class="mb-2">A GLIMPSE OF THE  COMPANY</h1>
+                        </div>
+                        <p class="mb-4">
+                            <span class="material-icons">done</span>As it reimagines how a customer might receive financial consultation in the simplest way possible, our organization has established the standard. <br>
+                            <span class="material-icons">done</span>Typically, a customer must go through a protracted registration process that takes a lot of time and is frustrating for the customer.<br>
+                            <span class="material-icons">done</span>To solve the aforementioned issue, our company offers two membership cards (the MARVEL MEMBERSHIP CARD AND UNIVERSAL MEMBERSHIP CARD) and provides each customer with a personalised gateway that enables them to quickly register for and get consultation services within minutes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Start Card Process Step -->
+        <section class="PlatformSection">
+            <div class="container text-center PlatformWrapper">
+                <div class="section-title position-relative text-center mx-auto mb-4 pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                        <h1 class="mb-3">The Only Platform You Can Trust</h1>
+                        <p class="mb-1">How it works</p>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="cardWrapper">
+                            <div class="Platformcard position-relative">
+                                <div class="Platformimg">
+                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="#000000" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.24 36.24C11.28 34.68 13.56 33.4496 16.08 32.5488C18.6 31.6496 21.24 31.2 24 31.2C26.76 31.2 29.4 31.6496 31.92 32.5488C34.44 33.4496 36.72 34.68 38.76 36.24C40.16 34.6 41.2504 32.74 42.0312 30.66C42.8104 28.58 43.2 26.36 43.2 24C43.2 18.68 41.3304 14.1496 37.5912 10.4088C33.8504 6.6696 29.32 4.8 24 4.8C18.68 4.8 14.1504 6.6696 10.4112 10.4088C6.6704 14.1496 4.8 18.68 4.8 24C4.8 26.36 5.1904 28.58 5.9712 30.66C6.7504 32.74 7.84 34.6 9.24 36.24ZM24 26.4C21.64 26.4 19.6496 25.5904 18.0288 23.9712C16.4096 22.3504 15.6 20.36 15.6 18C15.6 15.64 16.4096 13.6496 18.0288 12.0288C19.6496 10.4096 21.64 9.6 24 9.6C26.36 9.6 28.3504 10.4096 29.9712 12.0288C31.5904 13.6496 32.4 15.64 32.4 18C32.4 20.36 31.5904 22.3504 29.9712 23.9712C28.3504 25.5904 26.36 26.4 24 26.4ZM24 48C20.68 48 17.56 47.3696 14.64 46.1088C11.72 44.8496 9.18 43.14 7.02 40.98C4.86 38.82 3.1504 36.28 1.8912 33.36C0.6304 30.44 0 27.32 0 24C0 20.68 0.6304 17.56 1.8912 14.64C3.1504 11.72 4.86 9.18 7.02 7.02C9.18 4.86 11.72 3.1496 14.64 1.8888C17.56 0.6296 20.68 0 24 0C27.32 0 30.44 0.6296 33.36 1.8888C36.28 3.1496 38.82 4.86 40.98 7.02C43.14 9.18 44.8496 11.72 46.1088 14.64C47.3696 17.56 48 20.68 48 24C48 27.32 47.3696 30.44 46.1088 33.36C44.8496 36.28 43.14 38.82 40.98 40.98C38.82 43.14 36.28 44.8496 33.36 46.1088C30.44 47.3696 27.32 48 24 48Z" fill="black"/>
+                                    </svg>
+                                    <!-- <img src="img/createAccount.svg" alt="createAccount" /> -->
+                                </div>
+                                <div class="cardTitle">
+                                    <h5>VISION</h5>
+                                </div>
+                                <div class="CardSubtitle">
+                                    <p>
+                                        PRESENT HIGH LEVEL ADVICE AND QUALIFIED EXPERTS.
+                                    </p>
+                                </div>
+                                <div class="label"><p>VISION</p></div>
+                                <div class="arrow"><img src="{% static 'img/Arrow 4.svg' %}" alt="" /></div>
+                            </div>
+                            <div class="Platformcard position-relative">
+                                <div class="Platformimg">
+                                    <svg width="48" height="40" viewBox="0 0 48 40" fill="#000000" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M44.3077 0H3.69231C2.71305 0 1.77389 0.383116 1.08145 1.06507C0.38901 1.74702 0 2.67194 0 3.63636V36.3636C0 37.3281 0.38901 38.253 1.08145 38.9349C1.77389 39.6169 2.71305 40 3.69231 40H6.78462C7.13419 40.001 7.47668 39.9029 7.77127 39.7176C8.06586 39.5322 8.30013 39.2673 8.44615 38.9545C9.34945 37.0927 10.7693 35.5207 12.5417 34.4203C14.314 33.3198 16.3664 32.7358 18.4615 32.7358C20.5567 32.7358 22.6091 33.3198 24.3814 34.4203C26.1537 35.5207 27.5736 37.0927 28.4769 38.9545C28.6229 39.2673 28.8572 39.5322 29.1518 39.7176C29.4464 39.9029 29.7889 40.001 30.1385 40H44.3077C45.287 40 46.2261 39.6169 46.9185 38.9349C47.611 38.253 48 37.3281 48 36.3636V3.63636C48 2.67194 47.611 1.74702 46.9185 1.06507C46.2261 0.383116 45.287 0 44.3077 0ZM18.4615 29.0909C17.001 29.0909 15.5733 28.6644 14.3589 27.8652C13.1445 27.0661 12.198 25.9302 11.639 24.6013C11.0801 23.2724 10.9339 21.8101 11.2188 20.3993C11.5038 18.9886 12.2071 17.6927 13.2398 16.6756C14.2726 15.6585 15.5884 14.9658 17.0209 14.6852C18.4533 14.4046 19.9381 14.5486 21.2875 15.0991C22.6369 15.6495 23.7902 16.5817 24.6016 17.7777C25.4131 18.9737 25.8462 20.3798 25.8462 21.8182C25.8401 23.7452 25.0601 25.5915 23.6765 26.9542C22.293 28.3168 20.4182 29.0849 18.4615 29.0909ZM44.3077 36.3636H31.2462C30.4463 34.9974 29.4251 33.7691 28.2231 32.7273H38.7692C39.2589 32.7273 39.7284 32.5357 40.0747 32.1947C40.4209 31.8538 40.6154 31.3913 40.6154 30.9091V9.09091C40.6154 8.6087 40.4209 8.14623 40.0747 7.80526C39.7284 7.46428 39.2589 7.27273 38.7692 7.27273H9.23077C8.74114 7.27273 8.27156 7.46428 7.92534 7.80526C7.57912 8.14623 7.38462 8.6087 7.38462 9.09091V30.9091C7.38696 31.3104 7.52404 31.6996 7.77449 32.0162C8.02494 32.3327 8.3747 32.5588 8.76923 32.6591C7.53805 33.7175 6.49317 34.9693 5.67692 36.3636H3.69231V3.63636H44.3077V36.3636Z" fill="#white"/>
+                                    </svg>
+                                    <!-- <img src="img/tutor.svg" alt="createAccount" /> -->
+                                </div>
+                                <div class="cardTitle">
+                                    <h5>MISSION</h5>
+                                </div>
+                                <div class="CardSubtitle">
+                                    <p>
+                                       RAISE CONSENSUS THROUGH OUR CONSULTATION SERVICES.
+                                    </p>
+                                </div>
+                                <div class="label1"><p>MISSION</p></div>
+                                <div class="arrow1"><img src="{% static 'img/Arrow 4.svg' %}" alt="" /></div>
+                            </div>
+                            <div class="Platformcard position-relative">
+                                <div class="Platformimg">
+                                    <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M39.1 4.6H34.5V2.3C34.5 1.69 34.2577 1.10499 33.8263 0.673654C33.395 0.242321 32.81 0 32.2 0C31.59 0 31.005 0.242321 30.5737 0.673654C30.1423 1.10499 29.9 1.69 29.9 2.3V4.6H16.1V2.3C16.1 1.69 15.8577 1.10499 15.4263 0.673654C14.995 0.242321 14.41 0 13.8 0C13.19 0 12.605 0.242321 12.1737 0.673654C11.7423 1.10499 11.5 1.69 11.5 2.3V4.6H6.9C5.07001 4.6 3.31496 5.32696 2.02096 6.62096C0.726962 7.91496 0 9.67001 0 11.5V39.1C0 40.93 0.726962 42.685 2.02096 43.979C3.31496 45.273 5.07001 46 6.9 46H39.1C40.93 46 42.685 45.273 43.979 43.979C45.273 42.685 46 40.93 46 39.1V11.5C46 9.67001 45.273 7.91496 43.979 6.62096C42.685 5.32696 40.93 4.6 39.1 4.6ZM41.4 39.1C41.4 39.71 41.1577 40.295 40.7263 40.7263C40.295 41.1577 39.71 41.4 39.1 41.4H6.9C6.29 41.4 5.70499 41.1577 5.27365 40.7263C4.84232 40.295 4.6 39.71 4.6 39.1V23H41.4V39.1ZM41.4 18.4H4.6V11.5C4.6 10.89 4.84232 10.305 5.27365 9.87365C5.70499 9.44232 6.29 9.2 6.9 9.2H11.5V11.5C11.5 12.11 11.7423 12.695 12.1737 13.1263C12.605 13.5577 13.19 13.8 13.8 13.8C14.41 13.8 14.995 13.5577 15.4263 13.1263C15.8577 12.695 16.1 12.11 16.1 11.5V9.2H29.9V11.5C29.9 12.11 30.1423 12.695 30.5737 13.1263C31.005 13.5577 31.59 13.8 32.2 13.8C32.81 13.8 33.395 13.5577 33.8263 13.1263C34.2577 12.695 34.5 12.11 34.5 11.5V9.2H39.1C39.71 9.2 40.295 9.44232 40.7263 9.87365C41.1577 10.305 41.4 10.89 41.4 11.5V18.4Z" fill="#303030"/>
+                                    </svg>
+                                    <!-- <img src="img/Book Appointment.svg" alt="createAccount" /> -->
+                                </div>
+                                <div class="cardTitle">
+                                    <h5>VALUE</h5>
+                                </div>
+                                <div class="CardSubtitle">
+                                    <p>
+                                       PROMOTE ETHICS AND FINANCIAL HETEROGENEITY.
+                                    </p>
+                                </div>
+                                <div class="label2"><p>VALUE</p></div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Card Process Step -->
+
+        <!-- Team Start -->
+        <div class="container-xxl py-5">
+            <div class="container px-lg-5">
+                <div class="section-title position-relative text-center mx-auto mb-5 pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">Our Team Members</h1>
+                    <p class="mb-1">Vero justo sed sed vero clita amet. Et justo vero sea diam elitr amet ipsum eos
+                        ipsum clita duo sed. Sed vero sea diam erat vero elitr sit clita.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item border-top border-5 border-primary rounded shadow overflow-hidden">
+                            <div class="text-center p-4">
+                                <img class="img-fluid rounded-circle mb-4" src="{% static 'AdminDashboard/img/undraw_profile.svg' %}" alt="">
+                                <h5 class="fw-bold mb-1">Full Name</h5>
+                                <small>Designation</small>
+                            </div>
+                            <div class="d-flex justify-content-center bg-primary p-3">
+                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-item border-top border-5 border-primary rounded shadow overflow-hidden">
+                            <div class="text-center p-4">
+                                <img class="img-fluid rounded-circle mb-4" src="{% static 'AdminDashboard/img/undraw_profile_1.svg' %}" alt="">
+                                <h5 class="fw-bold mb-1">Full Name</h5>
+                                <small>Designation</small>
+                            </div>
+                            <div class="d-flex justify-content-center bg-primary p-3">
+                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-item border-top border-5 border-primary rounded shadow overflow-hidden">
+                            <div class="text-center p-4">
+                                <img class="img-fluid rounded-circle mb-4" src="{% static 'AdminDashboard/img/undraw_profile_2.svg' %}" alt="">
+                                <h5 class="fw-bold mb-1">Full Name</h5>
+                                <small>Designation</small>
+                            </div>
+                            <div class="d-flex justify-content-center bg-primary p-3">
+                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="team-item border-top border-5 border-primary rounded shadow overflow-hidden">
+                            <div class="text-center p-4">
+                                <img class="img-fluid rounded-circle mb-4" src="{% static 'AdminDashboard/img/undraw_profile_3.svg' %}" alt="">
+                                <h5 class="fw-bold mb-1">Full Name</h5>
+                                <small>Designation</small>
+                            </div>
+                            <div class="d-flex justify-content-center bg-primary p-3">
+                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Team End -->
+        
+    {% endblock %}

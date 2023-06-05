@@ -1,0 +1,49 @@
+{% extends "adminDashboard\Adminbase.html" %}
+{% block content %}
+    <!-- Begin Page Content -->
+                <div class="container-fluid">
+                    <div class="row g-2">
+                        <div class="col-lg-4">
+                            <div class="p-3 border bg-light shadow mb-5 bg-white rounded">
+                                <div class="wow fadeInUp" data-wow-delay="0.2s">
+                                    <form class="mb-3">
+                                        <div class="form-floating">
+                                            <div>
+                                                <label for="data">Search Data</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="data"
+                                                    id="cdata" value="Customer">
+                                                <label class="form-check-label" for="cdata">Customer</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="data"
+                                                    id="bdata" value="Bulksms">
+                                                <label class="form-check-label" for="bdata">Bulksms</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="data"
+                                                    id="cadata" value="Career">
+                                                <label class="form-check-label" for="cadata">Career</label>
+                                            </div>
+                                            <div>
+                                                <label class="form-label" for="typePhone">Mobile No</label>
+                                                <input type="tel" id="typePhone" class="form-control" />
+                                            </div>
+                                            <button type="submit" class="btn btn-primary mt-3">Search</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 shadow mb-5 p-3 bg-white rounded">
+                            <div>
+                                <h4>No Data</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.container-fluid -->
+                </div>
+                <!-- End of Main Content -->
+            </div>
+{% endblock %}

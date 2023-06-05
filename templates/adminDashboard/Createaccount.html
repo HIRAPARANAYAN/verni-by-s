@@ -1,0 +1,191 @@
+{% extends "adminDashboard\Adminbase.html" %}
+{% block content %}
+<!-- Begin Page Content -->
+                <div class="container-fluid">
+                    <div class="row g-2">
+                        <div class="col-lg-12">
+                            <div class="p-3 border bg-light shadow mb-5 bg-white rounded">
+                                <div class="wow fadeInUp" data-wow-delay="0.2s">
+                                    <div class="row">
+                                        <div class="col form-1 section-description wow fadeIn">
+                                            <h2>CREATE AN ACCOUNT</h2>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-10 offset-md-1 form-1-box wow fadeInUp">
+
+                                            <form action="" method="post">
+                                                <!-- Personal Info -->
+                                                <fieldset class="form-group border p-3">
+                                                    <legend class="w-auto px-2">Personal Info</legend>
+                                                    <div class="form-row">
+                                                        <div class="form-group col-md-6">
+                                                            <label for="Date">Date</label>
+                                                            <input type="date" class="form-control" id="Date">
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <label for="Name">Full Name</label>
+                                                            <input type="text" class="form-control" id="Name">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-row">
+                                                        <div class="form-group col-md-6">
+                                                            <label for="Mobile">Mobile No</label>
+                                                            <input type="tel" class="form-control" id="Mobile">
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <label for="Email">Email</label>
+                                                            <input type="email" class="form-control" id="Email">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-row">
+                                                        <div class="form-group col-md-6">
+                                                            <label for="City">City</label>
+                                                            <input type="text" class="form-control" id="City">
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <label for="State">State</label>
+                                                            <select class="custom-select" id="State"
+                                                                required>
+                                                                <option selected disabled value="">Choose...</option>
+                                                                <option>Rajasthan</option>
+                                                                <option>Madhya Pradesh</option>
+                                                                <option>Maharashtra</option>
+                                                                <option>Uttar Pradesh</option>
+                                                                <option>Gujarat</option>
+                                                                <option>Karnataka</option>
+                                                                <option>Ladakh</option>
+                                                                <option>Andhra Pradesh</option>
+                                                                <option>Odisha</option>
+                                                                <option>Chhattisgarh</option>
+                                                                <option>Tamil Nadu</option>
+                                                                <option>Telangana</option>
+                                                                <option>Bihar</option>
+                                                                <option>West Bengal</option>
+                                                                <option>Arunachal Pradesh</option>
+                                                                <option>Jharkhand</option>
+                                                                <option>Assam</option>
+                                                                <option>Himachal Pradesh</option>
+                                                                <option>Jammu and Kashmir</option>
+                                                                <option>Uttarakhand</option>
+                                                                <option>Punjab</option>
+                                                                <option>Haryana</option>
+                                                                <option>Kerala</option>
+                                                                <option>Meghalaya</option>
+                                                                <option>Manipur</option>
+                                                                <option>Mizoram</option>
+                                                                <option>Nagaland</option>
+                                                                <option>Tripura</option>
+                                                                <option>Andaman and Nicobar Islands</option>
+                                                                <option>Sikkim</option>
+                                                                <option>Goa</option>
+                                                                <option>Delhi</option>
+                                                                <option>Dadra and Nagar Haveli and Daman and Diu
+                                                                </option>
+                                                                <option>Puducherry</option>
+                                                                <option>Chandigarh</option>
+                                                                <option>Lakshadweep</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </fieldset>
+                                                <!-- Loan Info  -->
+                                                <fieldset class="form-group border p-3">
+                                                    <legend class="w-auto px-2">Loan Info</legend>
+                                                    <div class="form-row">
+                                                        <div class="form-group col-md-6">
+                                                            <label for="Amount">Loan Amount</label>
+                                                            <input type="number" class="form-control" id="Amount">
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <label for="CibilScore">Cibil Score</label>
+                                                            <select class="custom-select" id="CibilScore"
+                                                                required>
+                                                                <option selected disabled value="">Select Score</option>
+                                                                <option>650-700</option>
+                                                                <option>700-750</option>
+                                                                <option>750-800</option>
+                                                                <option>800-850</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-row">
+                                                        <div class="form-group col-md-6">
+                                                            <label for="LoanPurpose ">Loan Purpose </label>
+                                                            <select class="custom-select" id="LoanPurpose "
+                                                                required>
+                                                                <option selected disabled value="">Select Loan Purpose </option>
+                                                                <option>Personal Use</option>
+                                                                <option>Property Renovation</option>
+                                                                <option>Marriage Purpose</option>
+                                                                <option>Education Purpose</option>
+                                                                <option>Medical Emergency</option>
+                                                                <option>Other</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <label for="Monthlyincome">Monthly Income</label>
+                                                            <input type="number" class="form-control" id="Monthlyincome">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-row">
+                                                        <div class="form-group col-md-6">
+                                                            <label for="EMI">Monthly EMI You are Already Paying</label>
+                                                            <input type="number" class="form-control" id="EMI">
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <label for="Bounce">Last 6 Months Any EMI Bounce ?</label>
+                                                            <select class="custom-select" id="Bounce"
+                                                                required>
+                                                                <option selected disabled value=""></option>
+                                                                <option>NO</option>
+                                                                <option>YES</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </fieldset>
+
+                                                <fieldset class="form-group border p-3">
+                                                    <legend class="w-auto px-2">Membership Card Details</legend>
+                                                    <div class="form-row">
+                                                        <div class="form-group col-md-6">
+                                                            <label for="CardAmount">Card Amount</label>
+                                                            <input type="number" class="form-control" id="CardAmount">
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <strong>Note:18% GST Amount on Card Amount.</strong>
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-row">
+                                                        <div class="form-group col-md-6">
+                                                            <label for="Cardno">Card Number</label>
+                                                            <input type="number" class="form-control" id="Cardno" value="4818027945359667" disabled>
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <label for="Paymentid">Payment ID</label>
+                                                            <input type="text" class="form-control" id="Paymentid" value="cash_5ei4pTKI2sjAV" disabled>
+                                                        </div>
+                                                    </div>
+                                                </fieldset>
+                                                <!-- Submit Button  -->
+                                                <div class="form-group row text-right">
+                                                    <div class="col">
+                                                        <button type="submit"
+                                                            class="btn btn-primary btn-customized">Submit</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- /.container-fluid -->
+                </div>
+                <!-- End of Main Content -->
+            </div>
+ {% endblock %}

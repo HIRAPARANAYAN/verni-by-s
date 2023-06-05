@@ -1,0 +1,141 @@
+{% extends "Customer\Customerbase.html" %}
+{% block content %}
+<!-- Begin Page Content -->
+                <div class="container-fluid">
+                    <div class="row g-2">
+                        <div class="col-lg-12">
+                            <div class="p-3 border bg-light shadow mb-5 bg-white rounded">
+                                <div class="wow fadeInUp" data-wow-delay="0.2s">
+                                    <div class="row">
+                                        <div class="col form-1 section-description wow fadeIn">
+                                            <h2>KYC Documents</h2>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3 form-1-box wow fadeInUp">
+                                                <fieldset class="form-group border p-3">
+                                                    <legend class="w-auto px-2">Document List</legend>
+                                                    <div class="form-row">
+                                                        <div class="form-group col-md-12">
+                                                            <p>Profile Photo</p>
+                                                        </div>
+                                                        <div class="form-group col-md-12">
+                                                            <p>Aadhar Card</p>
+                                                        </div>
+                                                        <div class="form-group col-md-12">
+                                                            <p>PAN Card</p>
+                                                        </div>
+                                                        <div class="form-group col-md-12">
+                                                            <p>Address Proof - Light bill</p>
+                                                        </div>
+                                                        <div class="form-group col-md-12">
+                                                            <p>Cancel Cheque</p>
+                                                        </div>
+                                                        <div class="form-group col-md-12">
+                                                            <p>Bank Statement - Last 6 months</p>
+                                                        </div>
+                                                        <div class="form-group col-md-12">
+                                                            <p>Form 16</p>
+                                                        </div>
+                                                         <div class="form-group col-md-12">
+                                                            <p>Salary Slip</p>
+                                                        </div>
+                                                    </div>
+                                                </fieldset>
+                                        </div>
+                                        <div class="col-md-4 form-1-box wow fadeInUp">
+                                            <form action="" method="post" enctype="multipart/form-data">
+                                                <fieldset class="form-group border p-3">
+                                                    <legend class="w-auto px-2">Profile Photo</legend>
+                                                    <div class="form-row">
+                                                        <div class="form-group col-md-12">
+                                                            <input type="file" class="form-control" id="profilephoto" name="profilephoto">
+                                                        </div>
+                                                    </div>
+                                                </fieldset>
+                                                <fieldset class="form-group border p-3">
+                                                    <legend class="w-auto px-2">Aadhar Card</legend>
+                                                    <div class="form-row">
+                                                        <div class="form-group col-md-12">
+                                                            <label for="aadharcardNumber">Aadhar Card Number</label>
+                                                            <input type="number" class="form-control" id="aadharcardNumber" name="aadharcardNumber">
+                                                        </div>
+                                                        <div class="form-group col-md-12">
+                                                            <label for="aadharcard">Aadhar Card</label>
+                                                            <input type="file" class="form-control" id="aadharcard" name="aadharcard">
+                                                        </div>
+                                                    </div>
+                                                </fieldset>
+                                                <fieldset class="form-group border p-3">
+                                                    <legend class="w-auto px-2">Address Proof - Light bill</legend>
+                                                    <div class="form-row">
+                                                        <div class="form-group col-md-12">
+                                                            <input type="file" class="form-control" id="addressproof" name="addressproof">
+                                                        </div>
+                                                    </div>
+                                                </fieldset>
+                                                <fieldset class="form-group border p-3">
+                                                    <legend class="w-auto px-2">Form 16</legend>
+                                                    <div class="form-row">
+                                                        <div class="form-group col-md-12">
+                                                            <input type="file" class="form-control" id="form16" name="form16">
+                                                        </div>
+                                                    </div>
+                                                </fieldset>
+
+                                        </div>
+                                        <div class="col-md-4 form-1-box wow fadeInUp">
+                                                <fieldset class="form-group border p-3">
+                                                    <legend class="w-auto px-2">Cancel Cheque</legend>
+                                                    <div class="form-row">
+                                                        <div class="form-group col-md-12">
+                                                            <input type="file" class="form-control" id="cancelcheque" name="cancelcheque">
+                                                        </div>
+                                                    </div>
+                                                </fieldset>
+                                                <fieldset class="form-group border p-3">
+                                                    <legend class="w-auto px-2">Pan Card</legend>
+                                                    <div class="form-row">
+                                                        <div class="form-group col-md-12">
+                                                            <label for="pancardNumber">Pan Card Number</label>
+                                                            <input type="number" class="form-control" id="pancardNumber" name="pancardNumber">
+                                                        </div>
+                                                        <div class="form-group col-md-12">
+                                                            <label for="pancard">Pan Card</label>
+                                                            <input type="file" class="form-control" id="pancard" name="pancard">
+                                                        </div>
+                                                    </div>
+                                                </fieldset>
+                                                <fieldset class="form-group border p-3">
+                                                    <legend class="w-auto px-2">Bank Statement - Last 6 months</legend>
+                                                    <div class="form-row">
+                                                        <div class="form-group col-md-12">
+                                                            <input type="file" class="form-control" id="banks" name="banks">
+                                                        </div>
+                                                    </div>
+                                                </fieldset>
+                                                <fieldset class="form-group border p-3">
+                                                    <legend class="w-auto px-2">Salary Slip</legend>
+                                                    <div class="form-row">
+                                                        <div class="form-group col-md-12">
+                                                            <input type="file" class="form-control" id="salaryslip" name="salaryslip">
+                                                        </div>
+                                                    </div>
+                                                </fieldset>
+                                                <div class="col">
+                                                    <button type="submit" class="btn btn-primary btn-customized">Upload</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- /.container-fluid -->
+                </div>
+                <!-- End of Main Content -->
+            </div>
+ {% endblock %}

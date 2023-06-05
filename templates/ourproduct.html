@@ -1,0 +1,269 @@
+{% extends "base.html" %}
+    {% block content %}
+            <div class="container-xxl py-5 bg-primary hero-header mb-5">
+                <div class="container my-5 py-5 px-lg-5">
+                    <div class="row g-5 pt-5">
+                        <div class="col-12 text-center text-lg-start">
+                            <h1 class="display-4 text-white animated slideInLeft">Our Products</h1>
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb justify-content-center justify-content-lg-start animated slideInLeft">
+                                    <li class="breadcrumb-item"><a class="text-white" href="index.html">Home</a></li>
+                                    <li class="breadcrumb-item text-white active">Our Products</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+        <!-- Full Screen Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content" style="background: rgba(29, 40, 51, 0.8);">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center justify-content-center">
+                        <div class="input-group" style="max-width: 600px;">
+                            <input type="text" class="form-control bg-transparent border-light p-3" placeholder="Type search keyword">
+                            <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Full Screen Search End -->
+
+        <!-- About Start -->
+        <div class="container-xxl py-5">
+            <div class="container px-lg-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="section-title position-relative mb-4 pb-4">
+                            <h1 class="mb-2">MARVEL MEMBERSHIP CARD</h1>
+                        </div>
+                        <p class="mb-4">- Unlocking The Best Personal Loans</p>
+                        <div class="row g-3">
+                                <h1 class="display-4 text-dark mb-4 animated slideInLeft" style="font-size: 30px;">Go Ahead For Your Convenient Personal Loan With Marvel Membership Card</h1>
+                                <p class="text-dark animated slideInLeft">Varni Marvel Membership Card is an innovative and the most effective way of getting personal loan offers from multiple banks and private financial institutions – in just 15 minutes! Yes, when you purchase the membership card, apart from getting instant loan offers, you get eligible to avail of certain other amazing services provided by Varni.</p>
+                                <a href="{% url 'loginform' %}" class="btn btn-secondary py-sm-3 px-sm-5 me-3 animated slideInLeft">Apply Now</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="/static/img/marvelcard.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+        <!-- Marvel Start -->
+        <div class="container-xxl py-5">
+            <div class="container px-lg-5">
+                <div class="section-title position-relative text-center mx-auto mb-5 pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">Marvel Membership Card's Awesome Aspects</h1>
+                    <p class="mb-1">Marvel Membership Card</p>
+                </div>
+                <div class="row g-5 position-relative">
+                    <div class="col-lg-12 pe-lg-5">
+                        <div class="position-relative mx-auto mb-4 pb-4">
+                            <h3 class="fw-bold mt-1 text-center">Marvel Membership Card</h3>
+                        </div>
+                        <div class="row gy-3 gx-5">
+                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.1s">
+                                <span class="material-icons text-primary md-48 mb-3">account_balance</span>
+                                <h5 class="fw-bold">Personal Loan Offers From Multiple Banks</h5>
+                                <p>Once we gather your loan-related documents, we will quickly file your loan application in our partnered banks and financial institutions. Then, the NBFC banks will check your profile and match it to their respective loan eligibility criteria. After this, we will give you the loan offers from the banks in which your profile is matched.</p>
+                            </div>
+                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.3s">
+                                <span class="material-icons text-primary md-48 mb-3">manage_accounts</span>
+                                <h5 class="fw-bold">Get Free Loan Expert Consultancy for 4 Years</h5>
+                                <p>We believe in helping you with all our efforts! Serving the same purpose, purchasing a membership card enables you to get free expert consultancy through which you will be guided towards fetching suitable personal loan offers.</p>
+                            </div>
+                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.5s">
+                                <span class="material-icons text-primary md-48 mb-3">emoji_events</span>
+                                <h5 class="fw-bold">Get 40% Referral Payout as Reward</h5>
+                                <p>Besides getting personal loan offers from our partnered banks, you can make a good income through easy refer and sharing, and you can earn up to 40% referral commission from us.</p>
+                            </div>
+                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.7s">
+                                <span class="material-icons text-primary md-48 mb-3">approval</span>
+                                <h5 class="fw-bold">Quick Loan Approval</h5>
+                                <p>You can get a personal loan of up to Rs. 15 lakhs in just 30 minutes! Our quick services will aid you in getting your personal loan with the quick loan approval. Still, the final timeframe and loan details depend upon the concerned banks' criteria and the customer profile.</p>
+                            </div>
+                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.7s">
+                                <span class="material-icons text-primary md-48 mb-3">support_agent</span>
+                                <h5 class="fw-bold">Excellent On-Call Support</h5>
+                                <p>In order to clear your doubts and entertain your queries, we are more than happy to connect with you via our on-call support. Through this, you will be able to get appropriate answers to all your questions.</p>
+                            </div>
+                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.7s">
+                                <span class="material-icons text-primary md-48 mb-3">credit_score</span>
+                                <h5 class="fw-bold">No Effect On CIBIL Score</h5>
+                                <p>One of the best features of buying a Marvel Membership Card is that even after multiple bank verification, there will be no impact on the loan applicant's CIBIL score.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Marvel -->
+
+        <!-- Start Card Process Step -->
+        <section class="PlatformSection">
+            <div class="container text-center PlatformWrapper">
+                <div class="section-title position-relative text-center mx-auto mb-4 pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                        <h1 class="mb-3">The Only Platform You Can Trust</h1>
+                        <p class="mb-1">How it works</p>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="cardWrapper">
+                            <div class="Platformcard position-relative">
+                                <div class="Platformimg">
+                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="#000000" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.24 36.24C11.28 34.68 13.56 33.4496 16.08 32.5488C18.6 31.6496 21.24 31.2 24 31.2C26.76 31.2 29.4 31.6496 31.92 32.5488C34.44 33.4496 36.72 34.68 38.76 36.24C40.16 34.6 41.2504 32.74 42.0312 30.66C42.8104 28.58 43.2 26.36 43.2 24C43.2 18.68 41.3304 14.1496 37.5912 10.4088C33.8504 6.6696 29.32 4.8 24 4.8C18.68 4.8 14.1504 6.6696 10.4112 10.4088C6.6704 14.1496 4.8 18.68 4.8 24C4.8 26.36 5.1904 28.58 5.9712 30.66C6.7504 32.74 7.84 34.6 9.24 36.24ZM24 26.4C21.64 26.4 19.6496 25.5904 18.0288 23.9712C16.4096 22.3504 15.6 20.36 15.6 18C15.6 15.64 16.4096 13.6496 18.0288 12.0288C19.6496 10.4096 21.64 9.6 24 9.6C26.36 9.6 28.3504 10.4096 29.9712 12.0288C31.5904 13.6496 32.4 15.64 32.4 18C32.4 20.36 31.5904 22.3504 29.9712 23.9712C28.3504 25.5904 26.36 26.4 24 26.4ZM24 48C20.68 48 17.56 47.3696 14.64 46.1088C11.72 44.8496 9.18 43.14 7.02 40.98C4.86 38.82 3.1504 36.28 1.8912 33.36C0.6304 30.44 0 27.32 0 24C0 20.68 0.6304 17.56 1.8912 14.64C3.1504 11.72 4.86 9.18 7.02 7.02C9.18 4.86 11.72 3.1496 14.64 1.8888C17.56 0.6296 20.68 0 24 0C27.32 0 30.44 0.6296 33.36 1.8888C36.28 3.1496 38.82 4.86 40.98 7.02C43.14 9.18 44.8496 11.72 46.1088 14.64C47.3696 17.56 48 20.68 48 24C48 27.32 47.3696 30.44 46.1088 33.36C44.8496 36.28 43.14 38.82 40.98 40.98C38.82 43.14 36.28 44.8496 33.36 46.1088C30.44 47.3696 27.32 48 24 48Z" fill="black"/>
+                                    </svg>
+                                    <!-- <img src="img/createAccount.svg" alt="createAccount" /> -->
+                                </div>
+                                <div class="cardTitle">
+                                    <h5>Registration</h5>
+                                </div>
+                                <div class="CardSubtitle">
+                                    <p>
+                                        The user/customer will click on "Apply for Personal Loan" or “Apply for Business Loan”.
+                                    </p>
+                                </div>
+                                <div class="label"><p>step 1</p></div>
+                                <div class="arrow"><img src="/static/img/Arrow 4.svg" alt="" /></div>
+                            </div>
+                            <div class="Platformcard position-relative">
+                                <div class="Platformimg">
+                                    <svg width="48" height="40" viewBox="0 0 48 40" fill="#000000" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M44.3077 0H3.69231C2.71305 0 1.77389 0.383116 1.08145 1.06507C0.38901 1.74702 0 2.67194 0 3.63636V36.3636C0 37.3281 0.38901 38.253 1.08145 38.9349C1.77389 39.6169 2.71305 40 3.69231 40H6.78462C7.13419 40.001 7.47668 39.9029 7.77127 39.7176C8.06586 39.5322 8.30013 39.2673 8.44615 38.9545C9.34945 37.0927 10.7693 35.5207 12.5417 34.4203C14.314 33.3198 16.3664 32.7358 18.4615 32.7358C20.5567 32.7358 22.6091 33.3198 24.3814 34.4203C26.1537 35.5207 27.5736 37.0927 28.4769 38.9545C28.6229 39.2673 28.8572 39.5322 29.1518 39.7176C29.4464 39.9029 29.7889 40.001 30.1385 40H44.3077C45.287 40 46.2261 39.6169 46.9185 38.9349C47.611 38.253 48 37.3281 48 36.3636V3.63636C48 2.67194 47.611 1.74702 46.9185 1.06507C46.2261 0.383116 45.287 0 44.3077 0ZM18.4615 29.0909C17.001 29.0909 15.5733 28.6644 14.3589 27.8652C13.1445 27.0661 12.198 25.9302 11.639 24.6013C11.0801 23.2724 10.9339 21.8101 11.2188 20.3993C11.5038 18.9886 12.2071 17.6927 13.2398 16.6756C14.2726 15.6585 15.5884 14.9658 17.0209 14.6852C18.4533 14.4046 19.9381 14.5486 21.2875 15.0991C22.6369 15.6495 23.7902 16.5817 24.6016 17.7777C25.4131 18.9737 25.8462 20.3798 25.8462 21.8182C25.8401 23.7452 25.0601 25.5915 23.6765 26.9542C22.293 28.3168 20.4182 29.0849 18.4615 29.0909ZM44.3077 36.3636H31.2462C30.4463 34.9974 29.4251 33.7691 28.2231 32.7273H38.7692C39.2589 32.7273 39.7284 32.5357 40.0747 32.1947C40.4209 31.8538 40.6154 31.3913 40.6154 30.9091V9.09091C40.6154 8.6087 40.4209 8.14623 40.0747 7.80526C39.7284 7.46428 39.2589 7.27273 38.7692 7.27273H9.23077C8.74114 7.27273 8.27156 7.46428 7.92534 7.80526C7.57912 8.14623 7.38462 8.6087 7.38462 9.09091V30.9091C7.38696 31.3104 7.52404 31.6996 7.77449 32.0162C8.02494 32.3327 8.3747 32.5588 8.76923 32.6591C7.53805 33.7175 6.49317 34.9693 5.67692 36.3636H3.69231V3.63636H44.3077V36.3636Z" fill="#white"/>
+                                    </svg>
+                                    <!-- <img src="img/tutor.svg" alt="createAccount" /> -->
+                                </div>
+                                <div class="cardTitle">
+                                    <h5>Membership</h5>
+                                </div>
+                                <div class="CardSubtitle">
+                                    <p>
+                                       The customer can check the benefits of the membership card on the Varni website.
+                                    </p>
+                                </div>
+                                <div class="label1"><p>step 2</p></div>
+                                <div class="arrow1"><img src="/static/img/Arrow 4.svg" alt="" /></div>
+                            </div>
+                            <div class="Platformcard position-relative">
+                                <div class="Platformimg">
+                                    <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M39.1 4.6H34.5V2.3C34.5 1.69 34.2577 1.10499 33.8263 0.673654C33.395 0.242321 32.81 0 32.2 0C31.59 0 31.005 0.242321 30.5737 0.673654C30.1423 1.10499 29.9 1.69 29.9 2.3V4.6H16.1V2.3C16.1 1.69 15.8577 1.10499 15.4263 0.673654C14.995 0.242321 14.41 0 13.8 0C13.19 0 12.605 0.242321 12.1737 0.673654C11.7423 1.10499 11.5 1.69 11.5 2.3V4.6H6.9C5.07001 4.6 3.31496 5.32696 2.02096 6.62096C0.726962 7.91496 0 9.67001 0 11.5V39.1C0 40.93 0.726962 42.685 2.02096 43.979C3.31496 45.273 5.07001 46 6.9 46H39.1C40.93 46 42.685 45.273 43.979 43.979C45.273 42.685 46 40.93 46 39.1V11.5C46 9.67001 45.273 7.91496 43.979 6.62096C42.685 5.32696 40.93 4.6 39.1 4.6ZM41.4 39.1C41.4 39.71 41.1577 40.295 40.7263 40.7263C40.295 41.1577 39.71 41.4 39.1 41.4H6.9C6.29 41.4 5.70499 41.1577 5.27365 40.7263C4.84232 40.295 4.6 39.71 4.6 39.1V23H41.4V39.1ZM41.4 18.4H4.6V11.5C4.6 10.89 4.84232 10.305 5.27365 9.87365C5.70499 9.44232 6.29 9.2 6.9 9.2H11.5V11.5C11.5 12.11 11.7423 12.695 12.1737 13.1263C12.605 13.5577 13.19 13.8 13.8 13.8C14.41 13.8 14.995 13.5577 15.4263 13.1263C15.8577 12.695 16.1 12.11 16.1 11.5V9.2H29.9V11.5C29.9 12.11 30.1423 12.695 30.5737 13.1263C31.005 13.5577 31.59 13.8 32.2 13.8C32.81 13.8 33.395 13.5577 33.8263 13.1263C34.2577 12.695 34.5 12.11 34.5 11.5V9.2H39.1C39.71 9.2 40.295 9.44232 40.7263 9.87365C41.1577 10.305 41.4 10.89 41.4 11.5V18.4Z" fill="#303030"/>
+                                    </svg>
+                                    <!-- <img src="img/Book Appointment.svg" alt="createAccount" /> -->
+                                </div>
+                                <div class="cardTitle">
+                                    <h5>Submit Documents</h5>
+                                </div>
+                                <div class="CardSubtitle">
+                                    <p>
+                                       Document verification is compulsory as our company is not able to process the loan without it.
+                                    </p>
+                                </div>
+                                <div class="label2"><p>step 3</p></div>
+                                <div class="arrow2"><img src="/static/img/Arrow 4.svg" alt="" /></div>
+                            </div>
+                            <div class="Platformcard position-relative">
+                                <div class="Platformimg">
+                                    <svg width="55" height="47" viewBox="0 0 55 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 6.58613C0 4.83938 0.693305 3.16417 1.92739 1.92903C3.16148 0.693894 4.83527 0 6.58054 0H46.0638C47.809 0 49.4828 0.693894 50.7169 1.92903C51.951 3.16417 52.6443 4.83938 52.6443 6.58613V15.3984C52.3019 15.2232 51.949 15.0692 51.5877 14.9373L51.55 14.9223L51.1082 14.7755L49.7225 14.3578C49.4475 14.2744 49.1674 14.2091 48.884 14.1621V6.58613C48.884 5.83752 48.5869 5.11958 48.058 4.59023C47.5291 4.06088 46.8117 3.7635 46.0638 3.7635H6.58054C5.83257 3.7635 5.11523 4.06088 4.58633 4.59023C4.05744 5.11958 3.76031 5.83752 3.76031 6.58613V31.0489C3.76031 31.7975 4.05744 32.5154 4.58633 33.0448C5.11523 33.5741 5.83257 33.8715 6.58054 33.8715H15.0412V30.108C15.0412 29.1099 15.4374 28.1526 16.1426 27.4468C16.8478 26.741 17.8042 26.3445 18.8015 26.3445H33.8428C34.8401 26.3445 35.7965 26.741 36.5017 27.4468C37.2069 28.1526 37.6031 29.1099 37.6031 30.108V31.7621C36.8014 31.7607 36.0086 31.9303 35.2775 32.2597C34.5464 32.589 33.8939 33.0705 33.3633 33.6721L33.3182 33.7247L33.0606 34.0484L30.4735 37.635H6.58054C4.83527 37.635 3.16148 36.9411 1.92739 35.706C0.693305 34.4709 0 32.7956 0 31.0489V6.58613ZM33.8428 15.054C33.8428 17.0503 33.0504 18.9648 31.64 20.3764C30.2296 21.788 28.3167 22.581 26.3221 22.581C24.3276 22.581 22.4147 21.788 21.0043 20.3764C19.5939 18.9648 18.8015 17.0503 18.8015 15.054C18.8015 13.0577 19.5939 11.1432 21.0043 9.73161C22.4147 8.32003 24.3276 7.527 26.3221 7.527C28.3167 7.527 30.2296 8.32003 31.64 9.73161C33.0504 11.1432 33.8428 13.0577 33.8428 15.054ZM44.5333 18.8401C44.9496 18.0877 45.6108 17.5007 46.4068 17.1768C47.2029 16.8529 48.0857 16.8117 48.9084 17.06L50.2565 17.4664L50.6175 17.5868C51.7342 17.9957 52.7193 18.6998 53.4681 19.6242C54.217 20.5487 54.7016 21.6589 54.8704 22.8369C55.4288 26.7284 54.1804 31.2785 51.1703 36.4966C48.1677 41.7015 44.8623 45.0548 41.2242 46.5225C40.0553 46.9941 38.7757 47.1197 37.5375 46.8845C36.2992 46.6493 35.1546 46.0632 34.2395 45.1959L33.2204 44.2287L32.9911 43.9916C32.4243 43.3516 32.0923 42.5376 32.0496 41.6835C32.0068 40.8294 32.256 39.9863 32.756 39.2928L35.3074 35.7551L35.4785 35.5406C35.8368 35.1342 36.3045 34.8397 36.8256 34.6922C37.3467 34.5447 37.8993 34.5505 38.4172 34.7089L42.2734 35.8888L42.373 35.9076H42.4539C42.9145 35.8568 43.8508 34.9253 45.0015 32.9306C46.28 30.7139 46.5432 29.4174 46.1916 29.0825L44.2306 27.2534L43.9806 27.0031C43.3563 26.326 42.9447 25.4802 42.7969 24.5708C42.6492 23.6615 42.7718 22.7287 43.1495 21.8885L44.3942 19.1205L44.5333 18.8401Z" fill="black"/>
+                                    </svg>
+                                    <!-- <img src="img/call.svg" alt="createAccount" /> -->
+                                </div>
+                                <div class="cardTitle">
+                                    <h5>Bank Sanction</h5>
+                                </div>
+                                <div class="CardSubtitle">
+                                    <p>
+                                        Bank Sanction directly depends on the customer’s profile and bank criteria & rules and regulations.
+                                    </p>
+                                </div>
+                                <div class="label3"><p>step 4</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Card Process Step -->
+
+        <!-- Start cTabs Process Step -->
+        <div class="container-xxl domain" style="margin-top: 90px; margin-bottom: 90px;">
+            <div class="container px-lg-5">
+                    <div class="section-title position-relative text-center mx-auto mb-4 pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                        <h1 class="mb-3">Most Optimized Way Towards Personal Loan - How it works?</h1>
+                        <p class="mb-1">Vero justo sed sed vero clita amet. Et justo vero sea diam elitr amet ipsum eos ipsum clita duo sed. Sed vero sea diam erat vero elitr sit clita.</p>
+                    </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-10 tabsmain">
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                          <li class="nav-item col-lg-2 col-md-3 col-sm-4 col-6 text-center" role="presentation">
+                            <button class="nav-link active" id="pills-Registration-tab" data-bs-toggle="pill" data-bs-target="#pills-Registration" type="button" role="tab" aria-controls="pills-Registration" aria-selected="true">Registration</button>
+                          </li>
+                          <li class="nav-item col-lg-2 col-md-3 col-sm-4 col-6 text-center" role="presentation">
+                            <button class="nav-link" id="pills-Check-Eligibility-tab" data-bs-toggle="pill" data-bs-target="#pills-Check-Eligibility" type="button" role="tab" aria-controls="pills-Check-Eligibility" aria-selected="false">Check Eligibility</button>
+                          </li>
+                          <li class="nav-item col-lg-2 col-md-3 col-sm-4 col-6 text-center" role="presentation">
+                            <button class="nav-link" id="pills-Buy-Membership-Card-tab" data-bs-toggle="pill" data-bs-target="#pills-Buy-Membership-Card" type="button" role="tab" aria-controls="pills-Buy-Membership-Card" aria-selected="false">Buy Membership Card</button>
+                          </li>
+                            <li class="nav-item col-lg-2 col-md-3 col-sm-4 col-6 text-center" role="presentation">
+                            <button class="nav-link" id="pills-Submit-Documents-tab" data-bs-toggle="pill" data-bs-target="#pills-Submit-Documents" type="button" role="tab" aria-controls="pills-Submit-Documents" aria-selected="false">Submit Documents</button>
+                          </li>
+                            <li class="nav-item col-lg-2 col-md-3 col-sm-4 col-6 text-center" role="presentation">
+                            <button class="nav-link" id="pills-Bank-Verification-tab" data-bs-toggle="pill" data-bs-target="#pills-Bank-Verification" type="button" role="tab" aria-controls="pills-Bank-Verification" aria-selected="false">Bank Verification</button>
+                          </li>
+                            <li class="nav-item col-lg-2 col-md-3 col-sm-4 col-6 text-center" role="presentation">
+                            <button class="nav-link" id="pills-Bank-Sanction-tab" data-bs-toggle="pill" data-bs-target="#pills-Bank-Sanction" type="button" role="tab" aria-controls="pills-Bank-Sanction" aria-selected="false">Bank Sanction</button>
+                          </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                          <div class="tab-pane fade show active text-dark" id="pills-Registration" role="tabpanel" aria-labelledby="pills-Registration-tab">
+                              <span class="material-icons">done</span>After coming on the Varni home page, the user/customer will click on "Apply for Personal Loan" or “Apply for Business Loan”.<br>
+                              <span class="material-icons">done</span>The user/customer will register using their bank registered name and mobile number.<br>
+                              <span class="material-icons">done</span>If the customer is already registered, they can click on the Login option and login with their credentials.<br>
+                              <span class="material-icons">done</span>If the customer wants to calculate loan EMI and get its details then they can click on the Loan Calculator.<br>
+                              <span class="material-icons">done</span>After that, they have to click on “Apply Now”.
+                          </div>
+                          <div class="tab-pane fade text-dark" id="pills-Check-Eligibility" role="tabpanel" aria-labelledby="pills-Check-Eligibility-tab">
+                              <span class="material-icons">done</span>The customer will fill up the given details such as CIBIL score, city, loan purpose, income, and monthly EMI (in case of an existing loan).Then click on “Check Eligibility”.<br>
+                              <span class="material-icons">done</span>Our automated system will display the eligibility based on the customer details and income. Note: The pre-approval will be shown based only on the customer details, it will not be the final approval.<br>
+                              <span class="material-icons">done</span>Now after checking the eligibility, the customer will select the tenure and EMI and then click on “Get Offer”.
+                          </div>
+                          <div class="tab-pane fade text-dark" id="pills-Buy-Membership-Card" role="tabpanel" aria-labelledby="pills-Buy-Membership-Card-tab">
+                              <span class="material-icons">done</span>Our portal will show you the membership card with customer name with unique code. Click on Buy Now for getting a loan offer and membership card.<br>
+                              <span class="material-icons">done</span>The customer will enter their phone number and email-id; then click on Proceed.<br>
+                              <span class="material-icons">done</span>In the next step, the portal will show you multiple payment options. The customer can pay with any suitable payment option from there.<br>
+                              <span class="material-icons">done</span>The customer can avail several benefits of the membership card. The customer can check the benefits of the membership card on the Varni website.
+                          </div>
+                            <div class="tab-pane fade text-dark" id="pills-Submit-Documents" role="tabpanel" aria-labelledby="pills-Submit-Documents-tab">
+                               <span class="material-icons">done</span>After successful payment, the customer will receive a receipt and password on their email id.<br>
+                                <span class="material-icons">done</span>The customer will get a call from the login department in 24-48 hours after payment for document verification.<br>
+                                <span class="material-icons">done</span>Customer has to submit their documents within 3 days through the provided WhatsApp number or their customer portal.<br>
+                                <span class="material-icons">done</span>Document verification is compulsory as our company is not able to process the loan without it
+                          </div>
+                            <div class="tab-pane fade text-dark" id="pills-Bank-Verification" role="tabpanel" aria-labelledby="pills-Bank-Verification-tab">
+                                <span class="material-icons">done</span>NBFC Banks will verify the customer’s profile as per their rules and criteria.<br>
+                                <span class="material-icons">done</span>Customer’s documents will be verified by the NBFC Bank as per their terms and rules.
+                          </div>
+                            <div class="tab-pane fade text-dark" id="pills-Bank-Sanction" role="tabpanel" aria-labelledby="pills-Bank-Sanction-tab">
+                                <span class="material-icons">done</span>Bank Sanction directly depends on the customer’s profile and bank criteria & rules and regulations.<br>
+                                <span class="material-icons">done</span>The final decision on loan sanction, approval, and disbursement will depend on the banks as per their rules and regulations.<br><br>
+                                You can check all the company Terms & Conditions here: #
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Tabs Process Step -->
+    {% endblock %}

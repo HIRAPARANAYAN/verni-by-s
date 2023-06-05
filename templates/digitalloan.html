@@ -1,0 +1,175 @@
+{% extends "base.html" %}
+    {% block content %}
+{% load static %}
+            <div class="container-xxl py-5 bg-primary hero-header mb-5">
+                <div class="container my-5 py-5 px-lg-5">
+                    <div class="row g-5 pt-5">
+                        <div class="col-12 text-center text-lg-start">
+                            <h1 class="display-4 text-white animated slideInLeft">Our Digital Loan</h1>
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb justify-content-center justify-content-lg-start animated slideInLeft">
+                                    <li class="breadcrumb-item"><a class="text-white" href="{% url 'index' %}">Home</a></li>
+                                    <li class="breadcrumb-item text-white active">Our Digital Loan</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+        <!-- Full Screen Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content" style="background: rgba(29, 40, 51, 0.8);">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center justify-content-center">
+                        <div class="input-group" style="max-width: 600px;">
+                            <input type="text" class="form-control bg-transparent border-light p-3" placeholder="Type search keyword">
+                            <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Full Screen Search End -->
+
+        <!-- Pricing Start -->
+        <div class="container-xxl py-5">
+            <div class="container px-lg-5">
+                <div class="section-title position-relative text-center mx-auto mb-5 pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">Our Services</h1>
+                    <p class="mb-1">Our organization offers you the simplest escape from your crisis. In addition to being highly skilled, our professionals also provide recommendations for your improvement.</p>
+                </div>
+                <div class="row gy-5 gx-4">
+                    <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="position-relative shadow rounded border-top border-5 border-primary">
+                            <div class="d-flex align-items-center justify-content-center position-absolute top-0 start-50 translate-middle bg-primary rounded-circle" style="width: 100px; height: 100px; margin-top: -3px;">
+                                <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="{% static 'img/marvelcard.png' %}">
+                            </div>
+                            <div class="text-center border-bottom p-4 pt-5">
+                                <h4 class="fw-bold">MARVEL MEMBERSHIP CARD</h4>
+                                <p class="mb-0">Put our top specialists to work for you; to get one, you must apply for a marvel membership card. By doing so, you can get yourself out of a tight spot financially.</p>
+                            </div>
+                            <div class="text-center border-bottom p-4">
+                                <p class="text-primary mb-1">Latest Offer - <strong>Save 30%</strong></p>
+                                <h1 class="mb-3">
+                                    <small class="align-top" style="font-size: 22px; line-height: 45px;">Rs.</small>1199<small
+                                        class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Year</small>
+                                </h1>
+                                <a class="btn btn-primary px-4 py-2" href="{% url 'loginform' %}">Apply Now</a>
+                            </div>
+                            <div class="p-4">
+                                <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>Access a customized portal for personal financial consultation</p>
+                                <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>Get consultation services at any time and from any location</p>
+                                <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>A 100% online process</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="position-relative shadow rounded border-top border-5 border-secondary">
+                            <div class="d-flex align-items-center justify-content-center position-absolute top-0 start-50 translate-middle bg-secondary rounded-circle" style="width: 100px; height: 100px; margin-top: -3px;">
+                                <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="{% static 'img/universalcard.png' %}">
+                            </div>
+                            <div class="text-center border-bottom p-4 pt-5">
+                                <h4 class="fw-bold">UNIVERSAL MEMBERSHIP CARD</h4>
+                                <p class="mb-0">One can quickly apply for business financial counselling using their universal membership card, allowing them to manage their firm with ease.</p>
+                            </div>
+                            <div class="text-center border-bottom p-4">
+                                <p class="text-primary mb-1">Latest Offer - <strong>Save 30%</strong></p>
+                                <h1 class="mb-3">
+                                    <small class="align-top" style="font-size: 22px; line-height: 45px;">RS.</small>1299<small
+                                        class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Year</small>
+                                </h1>
+                                <a class="btn btn-secondary px-4 py-2" href="{% url 'loginform' %}">Apply Now</a>
+                            </div>
+                            <div class="p-4">
+                                <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>Access a customized portal for business financial consultation</p>
+                                <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>Get consultation services at any time and from any location</p>
+                                <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>A 100% online process</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Pricing End -->
+
+
+        <!-- Comparison Start -->
+        <div class="container-xxl py-5">
+            <div class="container px-lg-5">
+                <div class="section-title position-relative text-center mx-auto mb-5 pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">Marvel VS Universal Card</h1>
+                    <p class="mb-1">Vero justo sed sed vero clita amet. Et justo vero sea diam elitr amet ipsum eos
+                        ipsum clita duo sed. Sed vero sea diam erat vero elitr sit clita.</p>
+                </div>
+                <div class="row g-5 comparison position-relative">
+                    <div class="col-lg-6 pe-lg-5">
+                        <div class="section-title position-relative mx-auto mb-4 pb-4">
+                            <h3 class="fw-bold mb-0">Marvel Card</h3>
+                        </div>
+                        <div class="row gy-3 gx-5">
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
+                                <i class="fa fa-server fa-3x text-primary mb-3"></i>
+                                <h5 class="fw-bold">99.99% Uptime</h5>
+                                <p>Swiftly offers a refund after a customer complains or disagrees.</p>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
+                                <i class="fa fa-shield-alt fa-3x text-primary mb-3"></i>
+                                <h5 class="fw-bold">100% Secured</h5>
+                                <p>You may trust our organization with your private information, and we also offer a customised gateway for reporting any wrongdoings.
+</p>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                                <i class="fa fa-cog fa-3x text-primary mb-3"></i>
+                                <h5 class="fw-bold">Personal Dashboard</h5>
+                                <p>With our registration, we provide the highest comfort for our customers. A customer can apply for a form using our personal dashboard at any time and from any location.
+</p>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
+                                <i class="fa fa-headset fa-3x text-primary mb-3"></i>
+                                <h5 class="fw-bold">24/7 Support</h5>
+                                <p>Any of our staff members or administration may be questioned at any time and under any conditions.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 ps-lg-5">
+                        <div class="section-title position-relative mx-auto mb-4 pb-4">
+                            <h3 class="fw-bold mb-0">Universal Card</h3>
+                        </div>
+                        <div class="row gy-3 gx-5">
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
+                                <i class="fa fa-server fa-3x text-secondary mb-3"></i>
+                                <h5 class="fw-bold">99.99% Uptime</h5>
+                                <p>If a customer changes their mind, we only offer a 100% refund if they file a dispute.
+</p>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
+                                <i class="fa fa-shield-alt fa-3x text-secondary mb-3"></i>
+                                <h5 class="fw-bold">100% Secured</h5>
+                                <p>You may entrust our company with your confidential information, and we also provide a personalized complaint portal for any wrongdoings.</p>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                                <i class="fa fa-cog fa-3x text-secondary mb-3"></i>
+                                <h5 class="fw-bold">Business Dashboard</h5>
+                                <p>A company dashboard is available to any client that wants to use our services. A consumer benefits from the privacy of having their own registration login.</p>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
+                                <i class="fa fa-headset fa-3x text-secondary mb-3"></i>
+                                <h5 class="fw-bold">24/7 Support</h5>
+                                <p>Any of our employees or administrators are subject to questioning at any time and under any circumstance.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Comparison Start -->
+
+
+    {% endblock %}
